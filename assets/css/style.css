@@ -1,0 +1,49 @@
+body	{
+
+}
+
+#topnavbar	{
+	background-color: #4c8930;
+	min-height: 60px;
+}
+
+#topnavbar a	{
+	color: #fff;
+}
+
+#css-override .fa-bars {
+	color: #fff;
+	width: 35px;
+	height: 35px;
+}
+
+#css-override #topnavbar .dropdown	{
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+#css-override .dropdown a	{
+	color: black;
+}
+
+.logonavbar	{
+	min-height: 120px;
+}
+
+.jumbotron	{
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	background-image: url(../img/jumbotron.png);
+	background-repeat: no-repeat;
+    background-size: cover;
+/*    background-attachment: fixed;*/
+    background-position: 50% 0;
+    color: #fff;
+    max-height: 500px;
+    padding-top: 5em;
+}
+
+.jumbotron button	{
+	background-color: #4c8930;
+	color: #fff;
+}
