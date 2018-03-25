@@ -1,5 +1,5 @@
-body	{
-
+body, html {
+    height: 100%;
 }
 
 #topnavbar	{
@@ -31,19 +31,103 @@ body	{
 }
 
 .jumbotron	{
-	font-family: 'Open Sans', sans-serif;
-	text-align: center;
 	background-image: url(../img/jumbotron.png);
 	background-repeat: no-repeat;
     background-size: cover;
-/*    background-attachment: fixed;*/
-    background-position: 50% 0;
+    position: relative;
     color: #fff;
-    max-height: 500px;
-    padding-top: 5em;
+    height: 50%;
+}
+
+#css-override #jumbotronContent	{
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*#css-override #jumbotronContent */h1	{
+	font-size: 2.5rem;
+	font-weight: 300;
+	padding:0 0 10px 0;
 }
 
 .jumbotron button	{
 	background-color: #4c8930;
 	color: #fff;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.imagecontainer	{
+	padding: 5px;
+}
+
+#imagebanners{
+	margin-bottom: 30px;
+}
+
+.bannerimage	{
+	height: 220px;
+	border-radius: 5px;
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bannerimage h5 {
+	text-align: center;
+	color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.row	{
+	margin-right: 0;
+	margin-left: 0;
+}
+
+#bannerimage1	{
+	background-image: url(../img/imagebanner1.png);
+}
+#bannerimage2	{
+	background-image: url(../img/imagebanner2.png);
+}
+#bannerimage3	{
+	background-image: url(../img/imagebanner3.png);
+}
+
+#css-override #cin-container	{
+	max-width: 750px;
+}
+
+.cin-image	{
+	float: left;
+	margin: 20px;
+}
+
+.cin-image img	{
+	width: 40px;
+	height: 40px;
+}
+
+.cin-text	{
+	display: inline-block;
+	line-height: 5%;
+	text-align: center;
+}
+
+.cin-text p {
+	font-weight: 600;
+}
+
+.cin-cell	{
+	width: 200px;
+	margin: auto;
 }
