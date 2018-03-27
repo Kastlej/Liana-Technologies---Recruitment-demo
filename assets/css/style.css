@@ -3,6 +3,36 @@ body, html {
     font-family: 'Roboto', sans-serif;
 }
 
+h1	{
+	font-size: 2.5rem;
+	font-weight: 300;
+	padding:0 0 10px 0;
+}
+
+h3	{
+	opacity: 0.8;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.greenbutton	{
+	background-color: #4c8930;
+	color: #fff;
+}
+
+.greenbutton:hover	{
+	background-color: #fff;
+	border: 1px solid #4c8930;
+	color: #4c8930;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*NAVBAR*/
+
 #topnavbar	{
 	background-color: #4c8930;
 	min-height: 40px;
@@ -32,12 +62,16 @@ body, html {
 	min-height: 120px;
 }
 
+/*JUMBOTRON*/
+
 .jumbotron	{
 	background-image: url(../img/jumbotron.png);
-	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
     color: #fff;
+    min-height: 400px;
     height: 50%;
 }
 
@@ -45,32 +79,13 @@ body, html {
 	font-family: 'Roboto', sans-serif;
 	text-align: center;
     position: absolute;
+    height: 30%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-h1	{
-	font-size: 2.5rem;
-	font-weight: 300;
-	padding:0 0 10px 0;
-}
-
-.greenbutton	{
-	background-color: #4c8930;
-	color: #fff;
-}
-
-.greenbutton:hover	{
-	background-color: #fff;
-	border: 1px solid #4c8930;
-	color: #4c8930;
-}
-
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-}
+/*IMAGE BANNERS*/
 
 .imagecontainer	{
 	padding: 5px;
@@ -117,6 +132,8 @@ h1	{
 	background-image: url(../img/imagebanner3.png);
 }
 
+/*COMPANY IN NUMBERS*/
+
 #css-override #cin-container	{
 	max-width: 750px;
 	margin-bottom: 60px;
@@ -147,20 +164,32 @@ h1	{
 	margin: auto;
 }
 
+/*LATEST NEWS*/
+
 #latestNews	{
 	background-color: #eceeef;
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
 
-h3	{
-	opacity: 0.8;
-	text-align: center;
-	margin-bottom: 50px;
-}
-
 .card	{
 	height: 100%;
+}
+
+#imagebanners .imagecontainer:hover	{
+	opacity: 0.9;
+}
+
+#latestNews .card:hover	{
+	background-color: #fcfcfc;
+	opacity: 0.9;
+	-webkit-box-shadow: inset 7px 7px 7px -6px rgba(209,209,209,1);
+	-moz-box-shadow: inset 7px 7px 7px -6px rgba(209,209,209,1);
+	box-shadow: inset 7px 7px 7px -6px rgba(209,209,209,1);
+}
+
+#references .card:hover	{
+	background-color: #efefef;
 }
 
 #latestNews h5	{
@@ -172,6 +201,8 @@ h3	{
 	font-weight: 400;
 	opacity: 0.7;
 }
+
+/*REFERENCES*/
 
 #references	{
 	padding-top: 50px;
@@ -199,6 +230,8 @@ h3	{
 .card-img-top	{
 	border-bottom: 1px solid rgba(0,0,0,0.1);
 }
+
+/*SUBSCRIBE*/
 
 #subscribe	{
 	padding-top: 50px;
@@ -245,6 +278,63 @@ h3	{
 	margin-right: auto;
 	margin-left: auto;
 }
+
+.subscribed	{
+
+	position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	width: 60%;
+	min-height: 200px;
+	background-color: #4c8930;
+	border-radius: 10px;
+	border: 3px solid #568e45;
+	-webkit-box-shadow: 13px 14px 28px -5px rgba(16,43,15,1);
+	-moz-box-shadow: 13px 14px 28px -5px rgba(16,43,15,1);
+	box-shadow: 13px 14px 28px -5px rgba(16,43,15,1); 
+	z-index: 3;
+	padding: 5px;
+}
+
+.subscribed button	{
+	background-color: #4c8930;
+	border: none;
+	height: 30px;
+	width: 30px;
+	color: #fff;
+	float: right;
+	outline: none;
+}
+
+.subscribed h1	{
+	font-weight: 300;
+	color: #fff;
+	text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+.blur	{
+	filter: grayscale(80%);
+	transition: 0.2s;
+}
+
+.hidden	{
+	opacity: 0;
+	pointer-events: none;
+}
+
+#visible	{
+	opacity: 1;
+	transition: 0.8s;
+	pointer-events: auto;
+}
+
+/*FOOTER*/
 
 #footer{
 	padding-top: 50px;
